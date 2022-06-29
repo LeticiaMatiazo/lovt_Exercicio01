@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-green: #51d275;
+}
+
+header {
+  height: 49px;
+  width: 100%;
+  display: flex;
+  background: whitesmoke;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+header > div {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bars div {
+  width: 18px;
+  height: 2px;
+  background-color: #aaaaaa;
+}
+
+.bars div + div {
+  margin-top: 3px;
+}
+
+section#home img {
+  width: 100%;
+  margin-top: 15px;
+/*   background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  background-position-x: center;
+  min-height: 64vh;
+  margin-top: 15px; */
+}
+
+section {
+  width: 100%;
+  padding: 0px 80px;
+}
+
+section#prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  max-width: 256px;
+  background: #eeeeee;
+  border-radius: 15px;
+  font-family: Ropa Sans, sans-serif;
+}
+
+.card .container {
+  padding: 15px;
+}
+
+.card p {
+  font-size: 10px;
+  line-height: 11px;
+  color: #555555;
+}
+
+.card .price {
+  font-size: 25px;
+  color: #888888;
+}
+
+.card .tag {
+  border-radius: 25px;
+  padding: 1px 15px;
+  font-size: 20px;
+  line-height: 21px;
+  color: #ffffff;
+  float: right;
+}
+
+.card .tag.green-bg {
+  background: var(--background-green);
+}
+
+.card .tag.yellow-bg {
+  background: #ebcb21;
+}
+
+footer {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+footer > img {
+  border-radius: 19px;
+  width: 252px;
+  height: 163px;
+}
+
+footer > ul {
+  list-style: none;
+  color: #ffffff;
+}
+
+footer > ul li {
+  font-weight: normal;
+  font-size: 12px;
+  margin: 15px 0px;
+}
+
+footer > ul li img {
+  margin-left: 13px;
+}
+
+.marca{
+  text-align: center;
+  background-color: #333333;
+  color: #9bd1ab;
+  padding: 10px 0px;
+}
+
+.marca h3 {
+  color: #51d275;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.marca img.zap{
+  margin: 10px 8px;
+}
+
+/* Tablet
+@media(max-width: 768px) {}
+
+/* SmartPhones M *
+@media(max-width: 480px) {}*/
+
+@media(max-width: 683px) {
+  
+  footer {
+    display: block;
+    text-align: center;
+  }  
+
+  section {
+    padding: 0px;
+  }
+
+  .card {
+    margin: auto;
+  }
+}
